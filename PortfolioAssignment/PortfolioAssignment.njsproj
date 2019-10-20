@@ -246,6 +246,8 @@
     <Content Include="views\error.pug" />
     <Content Include="views\page.pug" />
     <Content Include="views\work.pug" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
