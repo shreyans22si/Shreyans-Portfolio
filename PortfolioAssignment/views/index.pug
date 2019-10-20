@@ -1,5 +1,488 @@
-﻿extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+﻿doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='icon' href='../images/favicon.png' type='image/png')
+  title Breed Portfolio - Home
+  // Bootstrap CSS
+  link(rel='stylesheet' href='../stylesheets/bootstrap.css')
+  link(rel='stylesheet' href='../vendors/linericon/style.css')
+  link(rel='stylesheet' href='../stylesheets/themify-icons.css')
+  link(rel='stylesheet' href='../vendors/owl-carousel/owl.theme.default.min.css')
+  link(rel='stylesheet' href='../vendors/fontawesome/css/all.min.css')
+  link(rel='stylesheet' href='../vendors/owl-carousel/owl.carousel.min.css')
+  link(rel='stylesheet' href='../vendors/nice-select/css/nice-select.css')
+  // main css
+  link(rel='stylesheet' href='../stylesheets/style.css')
+// ================ Start Header Area =================
+header.header_area
+  .main_menu
+    nav.navbar.navbar-expand-lg.navbar-light
+      .container
+        // Brand and toggle get grouped for better mobile display
+        a.navbar-brand.logo_h(href='index.html')
+          img(src='../images/logo.png' alt='')
+        a.navbar-brand.logo_inner_page(href='index.html')
+          img(src='../images/logo2.png' alt='')
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        // Collect the nav links, forms, and other content for toggling
+        #navbarSupportedContent.collapse.navbar-collapse.offset
+           ul.nav.navbar-nav.menu_nav
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='../about') About
+            li.nav-item
+              a.nav-link(href='../work') Portfolio
+            li.nav-item
+              a.nav-link(href='/page') pages
+            
+            li.nav-item
+              a.nav-link(href='../contact') Contact
+// ================ End Header Area =================
+// ================ Start Home Banner Area =================
+section.home_banner_area
+  .banner_inner
+    .container
+      .row.align-items-center.justify-content-between
+        .col-lg-6
+          .banner_content
+            h3 Hey There !
+            h1.text-uppercase I am Shreyans Bavisi
+            h5.text-uppercase Software Developer &amp; designer
+            .social_icons.my-5
+              a(href='#')
+                i.ti-twitter
+              a(href='#')
+                i.ti-skype
+              a(href='#')
+                i.ti-instagram
+              a(href='#')
+                i.ti-dribbble
+              a(href='#')
+                i.ti-vimeo
+            a.primary_btn(href='#')
+              span See My Work
+        .col-lg-4
+          .home_right_img
+            img.img-fluid(src='../images/banner/home-right.png' alt='')
+// ================ End Home Banner Area =================
+// ================ Start Statistics Area =================
+section.statistics_area
+  .container
+    .row.justify-content-lg-start.justify-content-center
+      .col-lg-2.col-md-3
+        .statistics_item
+          h3
+            span.counter 25
+            | k+
+          p Happy Customer
+      .col-lg-2.col-md-3
+        .statistics_item
+          h3
+            span.counter 20
+            | k+
+          p Ticket Solved
+      .col-lg-2.col-md-3
+        .statistics_item
+          h3
+            span.counter 9
+            | /10
+          p Average Rating
+// ================ End Statistics Area =================
+// ================ Start About Us Area =================
+section.about_area.section_gap
+  .container
+    .row.justify-content-start.align-items-center
+      .col-lg-5
+        .about_img
+          img(src='../images/about-us.png' alt='')
+      .offset-lg-1.col-lg-5
+        .main_title.text-left
+          p.top_text
+            | About me 
+            span
+          h2
+            | Creative Software Developer 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;And Designer
+          p
+            | Also signs his face were digns fish don&apos;t first isn&apos;t over evening hath divided days light darkness gathering
+            | moved dry all darkness then fourth can&apos;t create d forth Also signs Also signs his face were moltenus Also signs
+            | his face
+          a.primary_btn(href='#')
+            span Download CV
+// ================ End About Us Area =================
+// ================ Start Features Area =================
+section.services_area
+  .container
+    .row
+      .col-lg-12
+        .main_title
+          p.top_text
+            | Our Service 
+            span
+          h2
+            | What Service We 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Offer For You
+    .row
+      .col-lg-4.col-md-6.mb-4.mb-lg-0
+        .service_item
+          img(src='../images/services/s1.png' alt='')
+          h4 Web Development
+          p
+            | Fruit saw for brought fish forth had ave is man a that their Two he is dominion evening their Fruit saw for
+            | brought fish forth
+          a.primary_btn2.mt-35(href='#') Learn More
+      .col-lg-4.col-md-6.mb-4.mb-lg-0
+        .service_item
+          img(src='../images/services/s2.png' alt='')
+          h4 UX/UI Design
+          p
+            | Fruit saw for brought fish forth had ave is man a that their Two he is dominion evening their Fruit saw for
+            | brought fish forth
+          a.primary_btn2.mt-35(href='#') Learn More
+      .col-lg-4.col-md-6.mb-4.mb-lg-0
+        .service_item
+          img(src='../images/services/s3.png' alt='')
+          h4 WP Developing
+          p
+            | Fruit saw for brought fish forth had ave is man a that their Two he is dominion evening their Fruit saw for
+            | brought fish forth
+          a.primary_btn2.mt-35(href='#') Learn More
+// ================ End Features Area =================
+// ================ Start Testimonial Area =================
+section.testimonial_area
+  .container
+    .row
+      .col-lg-12
+        .main_title
+          p.top_text
+            | Our Tesitmonial 
+            span
+          h2
+            | Honourable Client Says 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;About Me
+    .owl-carousel.owl-theme.testimonial-slider
+      .testimonial-item
+        .row
+          .col-lg-6
+            .testi-img.mb-4.mb-lg-0
+              img(src='../images/testimonials/testimonial1.png' alt='')
+          .col-lg-6
+            .testi-right
+              h4 Roser Henrique
+              p
+                small Project Manager, Apple
+              p
+                | Waters can not replenish hath fly and be to brought isn&apos;t very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can&apos;t replenish hath fly and be to brought isn&apos;t very days behold
+              ul.star_rating.mt-4
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li.disable
+                  span
+                    i.fas.fa-star
+      .testimonial-item
+        .row
+          .col-lg-6
+            .testi-img.mb-4.mb-lg-0
+              img(src='../images/testimonials/testimonial1.png' alt='')
+          .col-lg-6
+            .testi-right
+              h4 Roser Henrique
+              p
+                small Project Manager, Apple
+              p
+                | Waters can not replenish hath fly and be to brought isn&apos;t very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can&apos;t replenish hath fly and be to brought isn&apos;t very days behold
+              ul.star_rating.mt-3
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li.disable
+                  span
+                    i.fas.fa-star
+      .testimonial-item
+        .row
+          .col-lg-6
+            .testi-img.mb-4.mb-lg-0
+              img(src='../images/testimonials/testimonial1.png' alt='')
+          .col-lg-6
+            .testi-right
+              h4 Roser Henrique
+              p
+                small Project Manager, Apple
+              p
+                | Waters can not replenish hath fly and be to brought isn&apos;t very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can&apos;t replenish hath fly and be to brought isn&apos;t very days behold
+              ul.star_rating.mt-3
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li
+                  span
+                    i.fas.fa-star
+                li.disable
+                  span
+                    i.fas.fa-star
+// ================ End Testimonial Area =================
+// ================ Start Portfolio Area =================
+section#portfolio.portfolio_area
+  .container
+    .row
+      .col-lg-12
+        .main_title
+          p.top_text
+            | Our Portfolio 
+            span
+          h2
+            | Check Our Recent 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Client Work
+    .filters.portfolio-filter
+      ul
+        li.active(data-filter='*') all
+        li(data-filter='.popular') popular
+        li(data-filter='.latest')  latest
+        li(data-filter='.following') following
+        li(data-filter='.upcoming') upcoming
+    .filters-content
+      .row.portfolio-grid
+        .grid-sizer.col-md-3.col-lg-3
+        .col-lg-6.col-md-6.all.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p1.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.latest.popular.upcoming
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p4.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-3.col-md-6.all.latest.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p2.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-3.col-md-6.all.latest.upcoming
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p3.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.popular
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p6.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.popular.latest.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p5.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+// ================ End Portfolio Area =================
+// ================ Start Blog Area =================
+section.blog-area.section-gap
+  .container
+    .row
+      .col-lg-12
+        .main_title
+          p.top_text
+            | Our blog 
+            span
+          h2
+            | Latest Story From 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Our Blog
+    .row
+      .col-lg-4.col-md-6
+        .single-blog
+          .thumb
+            img.img-fluid(src='../images/b1.jpg' alt='')
+          .short_details
+            .meta-top.d-flex
+              a(href='#')
+                i.ti-user
+                |  Admin post
+              a(href='#')
+                i.ti-calendar
+                |  Feb 14, 2019
+            a.d-block(href='single-blog.html')
+              h4 Shall every fourth lesser have...
+            .text-wrap
+              p
+                | Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+            a.primary_btn2(href='#') Learn More
+      .col-lg-4.col-md-6
+        .single-blog
+          .thumb
+            img.img-fluid(src='../images/b2.jpg' alt='')
+          .short_details
+            .meta-top.d-flex
+              a(href='#')
+                i.ti-user
+                |  Admin post
+              a(href='#')
+                i.ti-calendar
+                |  Feb 14, 2019
+            a.d-block(href='single-blog.html')
+              h4 Shall every fourth lesser have...
+            .text-wrap
+              p
+                | Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+            a.primary_btn2(href='#') Learn More
+      .col-lg-4.col-md-6
+        .single-blog
+          .thumb
+            img.img-fluid(src='../images/b3.jpg' alt='')
+          .short_details
+            .meta-top.d-flex
+              a(href='#')
+                i.ti-user
+                |  Admin post
+              a(href='#')
+                i.ti-calendar
+                |  Feb 14, 2019
+            a.d-block(href='single-blog.html')
+              h4 Shall every fourth lesser have...
+            .text-wrap
+              p
+                | Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+            a.primary_btn2(href='#') Learn More
+// ================ End Blog Area =================
+// ================ Start Brands Area =================
+section.brands-area.section_gap_bottom
+  .container
+    .row.justify-content-center
+      .col-lg-12
+        .owl-carousel.brand-carousel
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo1.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo2.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo3.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo4.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo5.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo3.png' alt='')
+// ================ End Brands Area =================
+// ================Footer Area =================
+footer.footer_area
+  .container
+    .row.justify-content-center
+      .col-lg-12
+        .footer_top.flex-column
+          .footer_logo
+            a(href='#')
+              img(src='../images/logo2.png' alt='')
+            .d-lg-block.d-none
+              nav.navbar.navbar-expand-lg.navbar-light.justify-content-center
+                .collapse.navbar-collapse.offset
+                  ul.nav.navbar-nav.menu_nav.mx-auto
+                    li.nav-item
+                      a.nav-link.text-white(href='index.html') Home
+                    li.nav-item
+                      a.nav-link.text-white(href='about.html') About
+                    li.nav-item
+                      a.nav-link.text-white(href='portfolio.html') Portfolio
+                    li.nav-item
+                      a.nav-link.text-white(href='blog.html') BLog
+                    li.nav-item
+                      a.nav-link.text-white(href='services.html') Services 
+          .footer_social.mt-lg-0.mt-4
+            a(href='#')
+              i.fab.fa-facebook-f
+            a(href='#')
+              i.fab.fa-twitter
+            a(href='#')
+              i.fab.fa-skype
+            a(href='#')
+              i.fab.fa-pinterest-p
+    .row.footer_bottom.justify-content-center
+      p.col-lg-8.col-sm-12.footer-text
+        // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+        | Copyright &copy;
+        script.
+          document.write(new Date().getFullYear());
+        |  All rights reserved | This template is made with 
+        i.fa.fa-heart(aria-hidden='true')
+        |  by 
+        a(href='https://colorlib.com' target='_blank') Colorlib
+        // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+// ================End Footer Area =================
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='../javascripts/jquery-3.2.1.min.js')
+script(src='../javascripts/popper.js')
+script(src='../javascripts/bootstrap.min.js')
+script(src='../javascripts/stellar.js')
+script(src='../vendors/isotope/imagesloaded.pkgd.min.js')
+script(src='../vendors/isotope/isotope-min.js')
+script(src='../vendors/owl-carousel/owl.carousel.min.js')
+script(src='../javascripts/jquery.ajaxchimp.min.js')
+script(src='../javascripts/mail-script.js')
+// gmaps Js
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE')
+script(src='../javascripts/gmaps.min.js')
+script(src='../javascripts/theme.js')
