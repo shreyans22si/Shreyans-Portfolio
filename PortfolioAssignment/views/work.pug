@@ -1,0 +1,116 @@
+﻿include header
+// ================ Start Banner Area =================
+section.banner_area
+  .banner_inner.d-flex.align-items-center
+    .container
+      .banner_content.text-center
+        h2 Portfolio
+        .page_link
+          a(href='index.html') Home
+          a(href='portfolio.html') Portfolio
+// ================ End Banner Area =================
+// ================ Start Portfolio Area =================
+section#portfolio.portfolio_area.section-margin.pb-0
+  .container
+    .row
+      .col-lg-12
+        .main_title
+          p.top_text
+            | Our Portfolio 
+            span
+          h2
+            | Check Our Recent 
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Client Work
+    .filters.portfolio-filter
+      ul
+        li.active(data-filter='*') all
+        li(data-filter='.popular') popular
+        li(data-filter='.latest')  latest
+        li(data-filter='.following') following
+        li(data-filter='.upcoming') upcoming
+    .filters-content
+      .row.portfolio-grid
+        .grid-sizer.col-md-3.col-lg-3
+        .col-lg-6.col-md-6.all.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p1.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.latest.popular.upcoming
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p4.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-3.col-md-6.all.latest.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p2.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-3.col-md-6.all.latest.upcoming
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p3.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.popular
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p6.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+        .col-lg-6.col-md-6.all.popular.latest.following
+          .single_portfolio
+            img.img-fluid.w-100(src='../images/portfolio/p5.jpg' alt='')
+            .overlay
+            .short_info
+              h4
+                a(href='portfolio-details.html') Lens Mockup Design
+              p Art, Illustration
+// ================ End Portfolio Area =================
+// ================ Start Brands Area =================
+section.brands-area.section_gap_bottom
+  .container
+    .row.justify-content-center
+      .col-lg-12
+        .owl-carousel.brand-carousel
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo1.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo2.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo3.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo4.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo5.png' alt='')
+          // single-brand
+          .single-brand-item.d-table
+            .d-table-cell
+              img(src='../images/brands/logo3.png' alt='')
+// ================ End Brands Area =================
+// ================Footer Area =================
+include footer

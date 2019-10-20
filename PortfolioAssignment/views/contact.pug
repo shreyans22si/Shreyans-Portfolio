@@ -1,0 +1,81 @@
+﻿include header
+// ================ Start Banner Area =================
+section.banner_area
+  .banner_inner.d-flex.align-items-center
+    .container
+      .banner_content.text-center
+        h2 Contact Us
+        .page_link
+          a(href='index.html') Home
+          a(href='blog.html') Contact
+// ================ End Banner Area =================
+// ================ contact section start =================
+section.section-margin
+  .container
+    .d-none.d-sm-block.mb-5.pb-4
+      #map(style='height: 480px;')
+      script.
+        function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var grayStyles = [
+        {
+        featureType: "all",
+        stylers: [
+        { saturation: -90 },
+        { lightness: 50 }
+        ]
+        },
+        {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
+        ];
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -31.197, lng: 150.744},
+        zoom: 9,
+        styles: grayStyles,
+        scrollwheel:  false
+        });
+        }
+      script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQNiHAyGiwZ_VYSYYlCrarnj1z4EwLgA&callback=initMap')
+    .row
+      .col-12
+        h2.contact-title Get in Touch
+      .col-lg-8.mb-4.mb-lg-0
+        form#contactForm.form-contact.contact_form(action='contact_process.php' method='post' novalidate='novalidate')
+          .row
+            .col-12
+              .form-group
+                textarea#message.form-control.w-100(name='message' cols='30' rows='9' placeholder='Enter Message')
+            .col-sm-6
+              .form-group
+                input#name.form-control(name='name' type='text' placeholder='Enter your name')
+            .col-sm-6
+              .form-group
+                input#email.form-control(name='email' type='email' placeholder='Enter email address')
+            .col-12
+              .form-group
+                input#subject.form-control(name='subject' type='text' placeholder='Enter Subject')
+          .form-group.mt-lg-3
+            button.primary_btn.button-contactForm(type='submit') Send Message
+      .col-lg-4
+        .media.contact-info
+          span.contact-info__icon
+            i.ti-home
+          .media-body
+            h3 369 Essa Road .
+            p Barrie, CA L49 NC8
+        .media.contact-info
+          span.contact-info__icon
+            i.ti-tablet
+          .media-body
+            h3
+              a(href='tel:454545654') +1 705-716-0436
+            p Mon to Fri 9am to 6pm
+        .media.contact-info
+          span.contact-info__icon
+            i.ti-email
+          .media-body
+            h3
+              a(href='mailto:support@colorlib.com') sbbavisi@gmail.com
+            p Send us your query anytime!
+// ================ contact section end =================
+// ================Footer Area =================
+include footer

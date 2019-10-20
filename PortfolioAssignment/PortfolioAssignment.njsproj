@@ -198,7 +198,14 @@
     <Content Include="public\scss\_reset.scss" />
     <Content Include="public\scss\_responsive.scss" />
     <Content Include="public\scss\_variables.scss" />
+    <Content Include="public\stylesheets\bootstrap.css" />
+    <Content Include="public\stylesheets\font-awesome.min.css" />
+    <Content Include="public\stylesheets\magnific-popup.css" />
     <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\stylesheets\style.css.map" />
+    <Content Include="public\stylesheets\style.map" />
+    <Content Include="public\stylesheets\themify-icons.css" />
     <Content Include="public\vendors\bootstrap-datepicker\bootstrap-datetimepicker.min.css" />
     <Content Include="public\vendors\bootstrap-datepicker\bootstrap-select.css" />
     <Content Include="public\vendors\fontawesome\bootstrap.min.css" />
@@ -231,8 +238,14 @@
     <Content Include="public\vendors\owl-carousel\owl.carousel.min.css" />
     <Content Include="public\vendors\owl-carousel\owl.theme.default.min.css" />
     <Content Include="README.md" />
+    <Content Include="views\about.pug" />
+    <Content Include="views\contact.pug" />
+    <Content Include="views\footer.pug" />
+    <Content Include="views\header.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\error.pug" />
+    <Content Include="views\page.pug" />
+    <Content Include="views\work.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
