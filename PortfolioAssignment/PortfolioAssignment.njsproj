@@ -55,8 +55,12 @@
     <Compile Include="public\vendors\nice-select\js\jquery.nice-select.js" />
     <Compile Include="public\vendors\nice-select\js\jquery.nice-select.min.js" />
     <Compile Include="public\vendors\owl-carousel\owl.carousel.min.js" />
+    <Compile Include="routes\about.js" />
+    <Compile Include="routes\contact.js" />
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\page.js" />
     <Compile Include="routes\users.js" />
+    <Compile Include="routes\work.js" />
     <Content Include="package.json" />
     <Content Include="public\fonts\fontawesome-webfont.eot" />
     <Content Include="public\fonts\fontawesome-webfont.svg" />
